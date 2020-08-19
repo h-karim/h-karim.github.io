@@ -87,6 +87,6 @@ p {
 .header {
 		text-align: center;
 		padding-top:40px;
-		margin-top:0px;
+		top:0px;
 		padding-bottom: 40px;
 }

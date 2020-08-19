@@ -1,11 +1,10 @@
 document.write(`
 						<div class="flex-container" id="side">
 								<div class="header">
-										<h1>My Website</h1>
-										<p>by Karim Hasbini.</p>
+										<h1>Karim Hasbini</h1>
 								</div>
 								<div  >
-										<p>Hi, I'm Karim Hasbini. I'm a software engineering student at <a href="https://www.concordia.ca/">ConcordiaU</a>. 
+										<p>Hi, I'm Karim. I'm a software engineering student at <a href="https://www.concordia.ca/">ConcordiaU</a>. 
 										<br/><a href="#">More about me</a>.
 										</p>
 
