@@ -1,0 +1,92 @@
+
+body {
+		font-family: Cantarell, Helvetica, sans-serif;
+		font-size: 16px;
+		background-color:#F1FAEE;
+		margin:0 auto;
+}
+a {
+		color: #E63946;
+		text-decoration: none;
+}
+a:hover {
+		color: #457B9D;
+}
+a:visited {
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+}
+h2 {
+		font-size: 2em;
+}
+h3 {
+		font-size 1.5em;
+}
+p {
+		border-style: hidden;
+		border-top-width: thin;
+		padding-top: 0px;
+		margin-top: 0px;
+		font-size: 1.25em;
+}
+#side {
+		background: #C5E8E8;
+}
+#side p{
+		font-size: 1em;	
+}
+
+*{
+		box-sizing: border-box;
+}
+.flex-container {
+		justify-content: center;
+		display: flex;
+}
+.flex-container#all{
+		flex-direction: row;
+		height:100%;
+		flex-wrap: wrap;
+}
+.flex-container#side {
+		overflow: scroll;
+		padding: 10px;
+		flex-direction: column;
+		flex-basis:220px;
+		position: relative;
+		justify-content: flex-start;
+		z-index: 100;
+		flex-shrink: 0;
+		flex-grow: 1;
+}
+#side::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#side {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#content{
+		height: auto;
+}
+#main {
+		padding: 40px;
+		flex-basis: 300px;
+		display: block;
+		height: auto;
+		flex-grow: 9999;
+		flex-shrink: 1;
+		flex-direction: column;
+}
+.header {
+		text-align: center;
+		padding-top:40px;
+		margin-top:0px;
+		padding-bottom: 40px;
+}
