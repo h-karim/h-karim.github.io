@@ -1,3 +1,11 @@
+@font-face {
+		font-family: Cantarell;
+		src: url('./fonts/cantarell/Cantarell-Regular.ttf');
+}
+@font-face {
+		font-family: FjallaOne;
+		src: url('./fonts/fjallaOne/FjallaOne-Reguler.ttf');
+}
 @keyframes fadeIn {
    0% {opacity: 0;}
    100% {opacity: 1;}
@@ -18,7 +26,10 @@ a:hover {
 }
 a:visited {
 }
-
+h1, h2, h3{
+		font-family: FjallaOne;
+		color: #1D3557;
+}
 h1 {
 	font-size: 3em;
 	margin-bottom: 5px;
@@ -30,7 +41,7 @@ h2 {
 h3 {
 		font-size 1.5em;
 }
-p {
+p, li {
 		border-style: hidden;
 		border-top-width: thin;
 		padding-top: 0px;
