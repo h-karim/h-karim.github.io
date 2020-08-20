@@ -5,7 +5,7 @@ document.write(`
 								</div>
 								<div  >
 										<p>Hi, I'm Karim. I'm a software engineering student at <a href="https://www.concordia.ca/">ConcordiaU</a>. 
-										<br/><a href="#">More about me.</a>.
+										<br/><a href="#">More about me</a>.
 										</p>
 
 								</div>
