@@ -89,10 +89,12 @@ p, li {
 }
 #content{
 		height: auto;
+		display: flex;
+		flex-direction: column;
 }
 #main {
 		animation: fadeIn ease 1s;
-		padding: 40px;
+		padding: 0% 12.5% 0% 12.5%;
 		flex-basis: 300px;
 		display: block;
 		height: auto;
