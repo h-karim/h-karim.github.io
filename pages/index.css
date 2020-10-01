@@ -1,0 +1,35 @@
+@import "../assets/theme.css";
+
+body, html{
+		height: 100%
+}
+*{
+		box-sizing: border-box;
+}
+.flex-container#all{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height:100%;
+}
+.flex-container#main {
+		padding: 40px;
+		flex-direction: column;
+		flex-grow: 9999;
+		flex-shrink: 0;
+		flex-basis: 300px;
+}
+.flex-container#projects{
+		justify-content: left;
+		flex-direction: row;
+}
+.project {
+		flex-basis: 220px;
+		min-width: 33%;
+}
+.header {
+		text-align: center;
+		padding-top:40px;
+		margin-top:0px;
+		padding-bottom: 40px;
+}
