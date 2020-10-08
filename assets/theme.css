@@ -57,9 +57,6 @@ p, li {
 		margin-top: 0px;
 		font-size: 1.25em;
 }
-#side p{
-		font-size: 1em;	
-}
 
 *{
 		box-sizing: border-box;
@@ -88,11 +85,19 @@ p, li {
 #side::-webkit-scrollbar {
   display: none;
 }
+#side p{
+		font-size: 1em;	
+}
 
 /* Hide scrollbar for IE, Edge and Firefox */
 #side {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+#github, #linkedin{
+		height: auto;
+		max-width: 32px;
+		margin: 0 5% 5%;
 }
 #content{
 		height: auto;
@@ -112,13 +117,11 @@ p, li {
 }
 .header {
 		text-align: center;
-		padding-top:40px;
 		top:0px;
-		padding-bottom: 40px;
 }
 
 @media only screen and (max-width: 520px){
-		img{
+		#profile-pic{
 				height: auto;
 				max-width: 100px;
 				float: left;

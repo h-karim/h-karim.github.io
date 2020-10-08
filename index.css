@@ -27,9 +27,3 @@ body, html{
 		flex-basis: 220px;
 		min-width: 33%;
 }
-.header {
-		text-align: center;
-		padding-top:40px;
-		margin-top:0px;
-		padding-bottom: 40px;
-}
