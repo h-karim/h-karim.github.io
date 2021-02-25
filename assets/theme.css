@@ -26,6 +26,12 @@ html, body {
 		background-color:#F1FAEE;
 		margin:0 auto;
 }
+.flex-container#all{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height:100%;
+}
 a {
 		color: #E63946;
 		text-decoration: none;
@@ -48,7 +54,19 @@ h2 {
 		font-size: 2em;
 }
 h3 {
-		font-size 1.5em;
+		font-size: 1.5em;
+}
+nav{
+		display: flex;
+}
+nav ul {
+		margin-left: auto;
+		list-style: none;
+		display: flex;
+		text-align: center;
+}
+nav li {
+		margin-left: auto;
 }
 p, li {
 		border-style: hidden;
@@ -107,7 +125,7 @@ p, li {
 #main {
 		animation: fadeIn ease 1s;
 		height:100%;
-		padding: 0% 12.5% 0% 12.5%;
+		padding: 40px;
 		flex-basis: 300px;
 		display: block;
 		height: 100%;
@@ -130,4 +148,6 @@ p, li {
 		#side{
 				height: auto;
 		}
+		nav {
+		display: inline;}
 }
