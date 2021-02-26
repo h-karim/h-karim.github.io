@@ -7,5 +7,5 @@
 		$(`#${id}-author`).html(author);
 		$(`#${id}-date`).html(date);
 		$(`#${id}-title`).html(article_title);
-		$(`#${id}-content`).load(`content.html`);
+		$(`#${id}-content`).load(`/pages/blog/2021-1-3/content.html`);
  		$(`#${id}-summary`).html(summary);
