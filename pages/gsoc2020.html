@@ -1,112 +1,93 @@
- <!DOCTYPE html>
-<html lang="en">
-		<head>
-				<title>GSOC 2020</title>
-				<meta charset="UTF-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-				<link rel="stylesheet" type="text/css" href="gsoc2020.css">
-		</head> 
-		<body>
-				<script src='/assets/js/jquery.js'></script>
-				<script src='/assets/js/jQDriver.js'></script>
-				<div class="flex-container" id="all">
-						<div id='side'></div>
-						<div class="flex-container" id="main">
-								<nav id='navbar'></nav>
-								<div id="content">
-										<h1>Google Summer of Code 2020</h1>
-										<h2>Project Title: Visualization</h2>
-										<div class="flex-container" id="people">
+<div>
+				<h1>Google Summer of Code 2020</h1> 
+				<h2>Project Title: Visualization</h2>
+				<div class="flex-container" style='flex-direction: row, flex-wrap: wrap'>
 
-												<div style='padding: 5px' >
-														<h2>Student </h2>
-														<p>Karim Hasbini </p> 
-												</div>
-												<div style='padding: 5px' >
-														<h2>Mentors</h2>
-														<p>Christine Rogers<br/>
-														Cécile Madjar
-														</p>
-												</div>
-												<div style='padding: 5px' >
-														<h2>Teammate</h2>
-														<p>Laetitia Fesselier</p>
-												</div>
-												<div style='padding: 5px' >	
-														<h2>Organization</h2>
-														<p><a href="https://www.incf.org/">INCF</a></p>
-												</div>
-										</div>
-										<h2>Overview</h2>	
-										<p>
-												The goal of this project is to provide BIDS-iEEG compatibility for LORIS as 
-												well as visualization for EEG and iEEG recordings for the electrophysiology 
-												module by using an already existing React library. 
-										</p>
-										<h2>Deliverables</h2>
-										<ul>
-												<li>Install LORIS and understand code base</li>
-												<li>Work on issues from different modules and issue pull requests</li>
-												<li>Add iEEG support to LORIS-MRI</li>
-												<li>Connect visualization library to LORIS</li>
-										</ul>
-										<h2>Timeline</h2>
-										<h3>May: First Contact</h3>
-										<p>I was introduced to the team behind LORIS in may as well as install it on 
-										a virtual machine hosted at the 
-										<a href="https://mcin.ca/">McGill Center for Integrative Neuroscience </a> in order to familiarize
-										myself with the code base. Due to the pandemic at the time, I could not meet the team in person. Nevertheless, 
-										attending several meetings allowed me to take on issues from the backlog.</p>
-										<h3>June</h3>
-										<p>In June I worked on several issues spanning different LORIS modules (with a focus on the electrophysiology browser)
-										in order to further develop my understanding of the software stack used. LORIS was going through a release testing phase
-										which I participated in by providing feedback on the results of the testing plans. I was 
-										also fortunate enough to attend the <a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3958">OHBM</a>
-										virtual brainhack conference where I got to listen to a talk about <a href="https://bids.neuroimaging.io/">BIDS</a>.
-										</p>
-										<h3>July</h3>
-										<p>July was marked by switching my attention to <a href="https://github.com/aces/Loris-MRI/">LORIS-MRI</a>, a sister
-										repo to LORIS used to upload EEG and MRI files in BIDS format to its database. I focused on reading the code as well 
-										as documentation on EEG and iEEG-BIDS. This allowed me to implement changes required to adapt the upload pipeline to
-										support iEEG-BIDS directories. By the end of July iEEG data was successfully uploaded and a pull request was opened.
-										</p>
-										<h3>August</h3>
-										<p>In August, my pull request was reviewed and merged, adding initial support for iEEG-BIDS to LORIS-MRI.
-										A plan was drafted offering two strategies to add support to electrical stimulation files.
-										The rest of my focus was on connecting an already written visualization library dating back to 2018 to LORIS in 
-										order to visualize EEG and iEEG signals. Thanks to Laetitia, we were able to install the library on a recent 
-										version of LORIS, however many errors were still present which prevented visualization. Some of the errors were
-										resolved while some remain present. To continue progress, code using the react-three library should be refactored
-										to instead take advantage of react-three-fiber. </p>
-
-										<h2>Pull Requests</h2>
-										<ul>
-												<li>#552 (Loris-MRI)</li>
-												<li>#6773</li>
-												<li>#6768</li>
-												<li>#6668</li>
-												<li>#6654</li>
-												<li>#6525</li>
-												<li>#6523</li>
-												<li>#6513</li>
-												<li>#6499</li>
-
-										</ul>
-										<p>
-										Can be found <a href="https://github.com/aces/Loris/commits?author=h-karim">here</a> and 
-										<a href="https://github.com/aces/Loris-mri/commits?author=h-karim">here</a>.</p>
-										<h2><a href="https://docs.google.com/presentation/d/1jzIcn7A3Nyi4IpZwSpBJOvBS5PcUrWElhLzVXDCqOwA/edit?usp=sharing">
-										Presentation</a></h2>
-										<p>On Tuesday 4<sup>th</sup> of August I gave a brief presentation about my progress to the rest of the LORIS 
-										team, including some of the libraries and approaches used to solve the problems that I faced and the challenge
-										left to solve for August.</p>
-										<h2>Conclusion</h2> 
-										<p>Despite the conditions of pandemic, I was able to learn a lot. Being exposed to experienced developers 
-										and working alongside them to merge code allowed me to find areas needing work in my coding and documentation
-										skills, all while contributing to an open source project under a learning environment. I would like to wish 
-										everyone at the LORIS team continued success in their endeavour towards a more open world of scientific research.</p>
-								</div>
+						<div style='padding: 5px' >
+								<h2>Student </h2>
+								<p>Karim Hasbini </p> 
+						</div>
+						<div style='padding: 5px' >
+								<h2>Mentors</h2>
+								<p>Christine Rogers<br/>
+								Cécile Madjar
+								</p>
+						</div>
+						<div style='padding: 5px' >
+								<h2>Teammate</h2>
+								<p>Laetitia Fesselier</p>
+						</div>
+						<div style='padding: 5px' >	
+								<h2>Organization</h2>
+								<p><a href="https://www.incf.org/">INCF</a></p>
 						</div>
 				</div>
-		</body>
-</html>
+				<h2>Overview</h2>	
+				<p>
+						The goal of this project is to provide BIDS-iEEG compatibility for LORIS as 
+						well as visualization for EEG and iEEG recordings for the electrophysiology 
+						module by using an already existing React library. 
+				</p>
+				<h2>Deliverables</h2>
+				<ul>
+						<li>Install LORIS and understand code base</li>
+						<li>Work on issues from different modules and issue pull requests</li>
+						<li>Add iEEG support to LORIS-MRI</li>
+						<li>Connect visualization library to LORIS</li>
+				</ul>
+				<h2>Timeline</h2>
+				<h3>May: First Contact</h3>
+				<p>I was introduced to the team behind LORIS in may as well as install it on 
+				a virtual machine hosted at the 
+				<a href="https://mcin.ca/">McGill Center for Integrative Neuroscience </a> in order to familiarize
+				myself with the code base. Due to the pandemic at the time, I could not meet the team in person. Nevertheless, 
+				attending several meetings allowed me to take on issues from the backlog.</p>
+				<h3>June</h3>
+				<p>In June I worked on several issues spanning different LORIS modules (with a focus on the electrophysiology browser)
+				in order to further develop my understanding of the software stack used. LORIS was going through a release testing phase
+				which I participated in by providing feedback on the results of the testing plans. I was 
+				also fortunate enough to attend the <a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3958">OHBM</a>
+				virtual brainhack conference where I got to listen to a talk about <a href="https://bids.neuroimaging.io/">BIDS</a>.
+				</p>
+				<h3>July</h3>
+				<p>July was marked by switching my attention to <a href="https://github.com/aces/Loris-MRI/">LORIS-MRI</a>, a sister
+				repo to LORIS used to upload EEG and MRI files in BIDS format to its database. I focused on reading the code as well 
+				as documentation on EEG and iEEG-BIDS. This allowed me to implement changes required to adapt the upload pipeline to
+				support iEEG-BIDS directories. By the end of July iEEG data was successfully uploaded and a pull request was opened.
+				</p>
+				<h3>August</h3>
+				<p>In August, my pull request was reviewed and merged, adding initial support for iEEG-BIDS to LORIS-MRI.
+				A plan was drafted offering two strategies to add support to electrical stimulation files.
+				The rest of my focus was on connecting an already written visualization library dating back to 2018 to LORIS in 
+				order to visualize EEG and iEEG signals. Thanks to Laetitia, we were able to install the library on a recent 
+				version of LORIS, however many errors were still present which prevented visualization. Some of the errors were
+				resolved while some remain present. To continue progress, code using the react-three library should be refactored
+				to instead take advantage of react-three-fiber. </p>
+
+				<h2>Pull Requests</h2>
+				<ul>
+						<li>#552 (Loris-MRI)</li>
+						<li>#6773</li>
+						<li>#6768</li>
+						<li>#6668</li>
+						<li>#6654</li>
+						<li>#6525</li>
+						<li>#6523</li>
+						<li>#6513</li>
+						<li>#6499</li>
+
+				</ul>
+				<p>
+				Can be found <a href="https://github.com/aces/Loris/commits?author=h-karim">here</a> and 
+				<a href="https://github.com/aces/Loris-mri/commits?author=h-karim">here</a>.</p>
+				<h2><a href="https://docs.google.com/presentation/d/1jzIcn7A3Nyi4IpZwSpBJOvBS5PcUrWElhLzVXDCqOwA/edit?usp=sharing">
+				Presentation</a></h2>
+				<p>On Tuesday 4<sup>th</sup> of August I gave a brief presentation about my progress to the rest of the LORIS 
+				team, including some of the libraries and approaches used to solve the problems that I faced and the challenge
+				left to solve for August.</p>
+				<h2>Conclusion</h2> 
+				<p>Despite the conditions of pandemic, I was able to learn a lot. Being exposed to experienced developers 
+				and working alongside them to merge code allowed me to find areas needing work in my coding and documentation
+				skills, all while contributing to an open source project under a learning environment. I would like to wish 
+				everyone at the LORIS team continued success in their endeavour towards a more open world of scientific research.</p>
+</div>

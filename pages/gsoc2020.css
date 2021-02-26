@@ -1,9 +1,1 @@
-@import "page.css";
 
-.flex-container #people{
-		flex-direction: row;
-		flex-wrap: wrap;
-}
-#people div{
-		padding: 10px;
-}

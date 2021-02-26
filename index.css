@@ -18,12 +18,16 @@ body, html{
 		flex-grow: 9999;
 		flex-shrink: 0;
 		flex-basis: 300px;
+	
 }
-.flex-container#projects{
+.flex-container#container{
 		justify-content: left;
 		flex-direction: row;
+	  		flex-wrap: wrap;
+
 }
 .project {
 		flex-basis: 220px;
 		min-width: 33%;
+		padding: 3px;
 }
